@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/first.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/in.css">
+    <link rel="stylesheet" href="css/out.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <title></title>
+  </head>
+  <body>
+
+  <div ui-view>
+  <div class='mainMain'>
+    <button ui-sref='first' class='begin'>
+      <div class="fader1">Take</div>
+      <div class="fader2">a</div>
+      <div class="fader3">Day</div>
+      <div class="fader4">Off</div>
+    </button>
+    </div>
+  </div>
+
+
+
+
+
+<footer>
+  <ul style='text-decoration: none'>
+    <li><a ui-sref="first">Welcome</a></li>
+    <li><a ui-sref="home">Home</a></li>
+    <li><a ui-sref="in">Inside</a></li>
+    <li><a ui-sref="out">Outside</a></li>
+  </ul>
+</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js'></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="app.js"></script>
+    <script src="js/first.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/in.js"></script>
+    <script src="js/out.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/mainService.js"></script>
+  </body>
+</html>

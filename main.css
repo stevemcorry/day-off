@@ -1,0 +1,160 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 0 0 0;
+}
+.mainMain{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(blue, blue, lightblue, lightgreen,green, green)
+}
+button{
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  height: 70px;
+  width: 40vw;
+  color: white;
+  font-family: Ubuntu;
+  font-weight: 100;
+  font-size: 60px;
+  cursor: pointer;
+  transition: animation 4s ease-in-out;
+}
+button div{
+  display: inline-block;
+}
+.begin:hover{
+  animation: firetext 20s ease;
+}
+.fader1{
+  animation: show1 2s both;
+}
+.fader2{
+  animation: show2 2s both;
+}
+.fader3{
+  animation: show3 2s both;
+}
+.fader4{
+  animation: show4 2s both;
+}
+@keyframes firetext {
+  0%{
+    color: white;
+    filter: drop-shadow(0px 1px .5px white);
+  }
+  15%{
+    color: red;
+  filter: drop-shadow(0px 1px .5px white);
+  }
+  30%{
+    color: orange;
+    filter: drop-shadow(0px 1px .5px white);
+  }
+  45%{
+    color: red
+    filter: drop-shadow(0px 1px .5px white);
+  }
+  60%{
+    color: orange;
+    filter: drop-shadow(0px 1px .5px white);
+  }
+  75%{
+    color: red;
+    filter: drop-shadow(0px 1px .5px white);
+  }
+  90%{
+    color: white;
+    filter: drop-shadow(-2px 0px 2px white);
+  }
+  100%{
+    color white;
+    filter: drop-shadow(0px -1px 1px white);
+  }
+}
+@keyframes show1 {
+	0% {
+		transform:translate(-15px,-20px);
+		opacity:0;
+		text-shadow:0 0 0 #888;
+	}
+	50% {
+		text-shadow:0 0 0.5em #888;
+	}
+	100% {
+		transform:translate(0,0);
+		opacity:1;
+		text-shadow:none;
+	}
+}
+@keyframes show2 {
+	0% {
+		transform:translate(0,2em);
+		opacity:0;
+		text-shadow:0 0 0 #888;
+	}
+	50% {
+		text-shadow:0 0 0.5em #888;
+	}
+	100% {
+		transform:translate(0,0);
+		opacity:1;
+		text-shadow:none;
+	}
+}
+@keyframes show3 {
+	0% {
+		transform:translate(-20px,-2em);
+		opacity:0;
+		text-shadow:0 0 0 #888;
+	}
+	50% {
+		text-shadow:0 0 0.5em #888;
+	}
+	100% {
+		transform:translate(0,0);
+		opacity:1;
+		text-shadow:none;
+	}
+}
+@keyframes show4 {
+	0% {
+		transform:translate(10px,2em);
+		opacity:0;
+		text-shadow:0 0 0 #888;
+	}
+	50% {
+		text-shadow:0 0 0.5em #888;
+	}
+	100% {
+		transform:translate(0,0);
+		opacity:1;
+		text-shadow:none;
+	}
+}
+
+/*    footer    */
+footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+}
+footer ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  list-style: none;
+}
+footer:hover{
+  visibility: visible !important;
+  background: red;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}

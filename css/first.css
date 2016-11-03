@@ -1,0 +1,60 @@
+.firstMain{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: firstBackground 2s both;
+  background: linear-gradient(black,black,black,black, black,black,rgb(60, 0, 0), rgb(145, 0, 0), red );
+}
+.congrats{
+  color: white;
+  font-family: Ubuntu;
+  font-weight: 100;
+  font-size: 36px;
+  margin: 15px;
+  text-align: center;
+  animation: showFirst 2s both;
+}
+.congratsButton{
+  margin-top: 150px;
+  animation: reveal 5s both;
+  animation-delay: 2s;
+}
+.congrats2{
+  animation-delay: 1.5s;
+}
+.congrats3{
+  animation-delay: 5s;
+}
+@keyframes reveal {
+	0% {
+		opacity:0;
+		text-shadow:0 0 0 #888;
+	}
+	50% {
+		text-shadow:0 0 0.5em #888;
+	}
+	100% {
+		transform:translate(0,0);
+		opacity:1;
+		text-shadow:none;
+	}
+}
+@keyframes showFirst {
+	0% {
+		transform:translate(0px,2em);
+		opacity:0;
+		text-shadow:0 0 0 #888;
+	}
+	50% {
+		text-shadow:0 0 0.5em #888;
+	}
+	100% {
+		transform:translate(0,0);
+		opacity:1;
+		text-shadow:none;
+	}
+}
