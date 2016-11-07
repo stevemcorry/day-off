@@ -4,7 +4,7 @@ body{
   overflow: hidden;
   margin: 0 0 0 0;
   background: linear-gradient(#2BC0E4 , #EAECC6, #85D8CE, #085078 ,#1D976C, #003973 , #E5E5BE , #93F9B9, #4CB8C4 , #E55D87 , #DD2476,#FF512F);
-  background-position: 0 0%;
+  background-position: 0 18%;
   background-size: auto 900%;
   transition: background 3s ease;
 }
