@@ -6,8 +6,6 @@ App.controller('outCtrl',function($http,mainService,$scope) {
     });
   };
 
-$scope.toggle = function() {
-  $scope.hidden=!$scope.hidden;
-};
+
 
 });

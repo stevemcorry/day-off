@@ -2,7 +2,7 @@
   color: white;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,6 +22,7 @@
   margin-top: 15px !important;
   margin-bottom: 5px;
   border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0);
   height: auto;
   text-align: center;
 }
@@ -39,4 +40,14 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 10px;
+}
+.trailDesrip{
+  font: 25px ubuntu;
+}
+.letEmKnow{
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-family: ubuntu;
+
 }

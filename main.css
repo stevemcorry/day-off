@@ -155,6 +155,6 @@ footer a{
   color: white;
 }
 footer a:hover{
-  color: black;
-  border-bottom: 2px solid black;
+  text-shadow: 0 0 2em green;
+  color: rgb(114, 202, 252);
 }

@@ -1,5 +1,7 @@
 .inMain{
   color: white;
+  font-family: ubuntu;
+  font-size: 56px;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -10,4 +12,8 @@
 }
 .inBack{
   background-position: 0 80%;
+}
+.idea{
+  cursor: pointer;
+  text-align: center;
 }
