@@ -1,8 +1,8 @@
 <div class="homeMain">
-  <div class="top">A Whole World of Opportunity is Available!</div>
+  <div class="top">What would you like to do today?</div>
 <div class="options">
-  <button type="button" class='inside' ui-sref='in'>Stay In</button>
-  <button type="button" class='outside'ui-sref='out'>Outside Day</button>
+  <button type="button" class='inside' ui-sref='in' ng-click='inBack()'>Stay In</button>
+  <button type="button" class='outside'ui-sref='out' ng-click='outBack()'>Go Out</button>
 </div>
-  <button type="button" class='weather' ui-sref='weather'>Check the Weather</button>
+  <button type="button" class='weather' ui-sref='weather' ng-click='weatherBack()'>Check the Weather</button>
 </div>

@@ -7,5 +7,36 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(black,black,black,black, black,black ,black,rgb(60, 0, 0), rgb(145, 0, 0), red, orange )
+}
+.outBack{
+  background-position: 0 60%;
+}
+.outMain input{
+  margin: 5px;
+}
+.trailLink{
+  text-decoration: none;
+  color: darkgreen;
+  font: 36px rubik;
+  margin: 20px;
+  margin-top: 15px !important;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  height: auto;
+  text-align: center;
+}
+.trailInfo{
+  color: darkblue;
+  text-align: center;
+  font-family: rubik;
+  font-size: 30px;
+}
+.trailLink:hover{
+  border: 2px solid green;
+}
+.trailLinks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
 }

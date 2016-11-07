@@ -7,5 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(black,black,black,black, black,black ,black,rgb(60, 0, 0), rgb(145, 0, 0), red, orange )
+}
+.inBack{
+  background-position: 0 80%;
 }

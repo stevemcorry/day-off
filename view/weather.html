@@ -1,12 +1,16 @@
 <div class="weatherMain">
+  <div class="weatherResults"> <div>{{weather.main.temp}}°</div> <div>{{weather.weather[0].main}}</div>
+  </div>
 <div>
-  Forcast for today!
-  {{weather.main.temp}}
-<show-time></show-time>
-<button type="button" ng-click='getWeather(provo)'>now</button>
+<button type="button" ng-click='getWeather(weatherCity)'>Forecast</button>
 </div>
 <div>
-<button type="button" ui-sref='in'>Stay In</button>
-<button type="button" ui-sref='out'>Go Outside</button>
+<form ng-submit='getWeather(weatherCity)'>
+<input type="text" ng-model='weatherCity' placeholder="Your City">
+</form>
+</div>
+<div>
+<button type="button" ui-sref='in' class="inside" ng-click='inBack()'>Stay In</button>
+<button type="button" ui-sref='out' class="outside" ng-click='outBack()'>Go Out</button>
 </div>
 </div>

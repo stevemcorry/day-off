@@ -1,3 +1,19 @@
 <div class="outMain">
-<button type="button" ng-click='getTrail()'>Get trail</button>
+<button type="button" ng-click='getTrail(city,state)' class='getTrail'>Get trail</button>
+<form ng-submit="getTrail(city,state)">
+<input type="text" ng-model='city' placeholder="City">
+</form>
+<form ng-submit="getTrail(city,state)">
+<input type="text" ng-model='state' placeholder="State">
+</form>
+<div class="trailLinks">
+<div ng-repeat='trail in trails'>
+  <div class="trailLink" ng-click='hidden=true'>
+    {{trail.name}}
+  </div>
+  <div class="trailInfo" ng-show='hidden' ng-click='hidden=false'>
+    {{trail.directions}}
+  </div>
+</div>
+</div>
 </div>

@@ -1,11 +1,31 @@
 .weatherMain{
   color: white;
-  height: 100vh;
+  height: 70vh;
   width: 100vw;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  background: linear-gradient(black,black,black,black, black,black ,black,rgb(60, 0, 0), rgb(145, 0, 0), red )
+  margin-top: 85px;
+}
+.weatherBack{
+  background-position: 0 50%;
+}
+.weatherResults{
+  display: none;
+  justify-content: space-around;
+  font-family: ubuntu;
+  font-size: 36px;
+  text-align: center;
+  width: 100vw;
+  margin-bottom: 50px;
+}
+input{
+  border: none;
+  border-radius: 5px;
+  font-size: 36px;
+  font-family: sans-serif;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.36);
 }

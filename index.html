@@ -14,27 +14,27 @@
   </head>
   <body>
 
-  <div ui-view>
-  <div class='mainMain'>
-    <button ui-sref='first' class='begin'>
+  <ui-view my-directive>
+  <div class='mainMain' ng-controller='firstCtrl'>
+    <button class='begin' ui-sref='first' ng-click='firstBack()'>
       <div class="fader1">Take</div>
       <div class="fader2">a</div>
       <div class="fader3">Day</div>
       <div class="fader4">Off</div>
     </button>
     </div>
-  </div>
+  </ui-view>
 
 
 
 
 
-<footer>
+<footer ng-controller='firstCtrl'>
   <ul style='text-decoration: none'>
-    <li><a ui-sref="first">Welcome</a></li>
-    <li><a ui-sref="home">Home</a></li>
-    <li><a ui-sref="in">Inside</a></li>
-    <li><a ui-sref="out">Outside</a></li>
+    <li><a ui-sref="first" ng-click='firstBack()'>Welcome</a></li>
+    <li><a ui-sref="home" ng-click='homeBack()'>Home</a></li>
+    <li><a ui-sref="in" ng-click='inBack()'>Inside</a></li>
+    <li><a ui-sref="out"ng-click='outBack()'>Outside</a></li>
   </ul>
 </footer>
 
@@ -42,6 +42,7 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js'></script>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="app.js"></script>
+    <script src="js/directive.js"></script>
     <script src="js/first.js"></script>
     <script src="js/home.js"></script>
     <script src="js/in.js"></script>

@@ -7,5 +7,81 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(black,black,black,black, black,black ,black,rgb(60, 0, 0), rgb(145, 0, 0), red, orange )
+}
+.homeBack{
+  background-position: 0 70%
+}
+.outside:hover{
+  animation: outsideText 9s;
+  filter: drop-shadow(0px 1px .5px white);
+}
+.inside:hover{
+  animation: insideText 10s linear;
+  filter: drop-shadow(0px 1px .5px darkblue);
+}
+@keyframes outsideText {
+  0%{
+    color: white;
+    filter: drop-shadow(0px 1px .5px white);
+  }
+  15%{
+    color: yellow;
+  filter: drop-shadow(0px 1px 5px white);
+  }
+  30%{
+    color: orange;
+    filter: drop-shadow(0px 1px .5px white);
+  }
+  45%{
+    color: rgb(208, 75, 0);
+    filter: drop-shadow(0px 1px .5px white);
+  }
+  60%{
+    color: orange;
+    filter: drop-shadow(0px 1px .5px white);
+  }
+  75%{
+    color: rgb(255, 176, 57);
+    filter: drop-shadow(0px 1px .5px white);
+  }
+  100%{
+    color white;
+    filter: drop-shadow(0px 1px .5px white);
+  }
+}
+@keyframes insideText {
+  0%{
+    color: white;
+    filter: drop-shadow(0px 1px .5px darkblue);
+  }
+  25%{
+    color: rgb(40, 201, 56);
+    filter: drop-shadow(0px 1px 200px darkblue);
+  }
+  75%{
+    color: rgb(14, 113, 190);
+    filter: drop-shadow(0px 1px .5px darkblue);
+  }
+}
+.top{
+  font-family: rubik;
+  font-size: 46px;
+  position: absolute;
+  top: 70px;
+}
+.weather{
+  margin-top: 100px;
+  transform: translate(0px, 100px);
+  font-size: 46px;
+  transition: all 2s ease;
+}
+.inside{
+  margin-right: 100px;
+}
+.outside{
+  margin-left: 100px;
+}
+.weather:hover{
+  color: darkgreen;
+  font-size: 50px;
 }
