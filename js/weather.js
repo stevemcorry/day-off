@@ -4,6 +4,7 @@ App.controller('weatherCtrl',function($scope,mainService) {
       $scope.weather = results.data;
       console.log(results.data);
     });
+
   };
   $scope.outBack=function() {
       $('body').addClass('outBack');
